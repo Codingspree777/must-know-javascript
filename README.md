@@ -33,7 +33,7 @@ Given the following code:
 var arr = [2, 17, 3, 15, 18, 19, 1, 0];
 ```
 
-1.  Use method-chaining to remove the largest item in one line.
+1.  Use method-chaining to remove the largest item from the array in one line.
 1.  Use method-chaining to create a new array that contains only the squares of the numbers that are greater than 9 in one line.
 
 ---
@@ -76,3 +76,5 @@ function myIsNaN(val) {
 - What is the difference between `==` and `===`?
 - What is a method to convert arrays and numbers to strings?
 - What is a valuable way to convert an object to a string?
+- What are two ways to convert anything to its boolean value?
+- What are the 6 falsy values in JavaScript?
