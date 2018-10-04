@@ -1,6 +1,6 @@
 # Must-Know JavaScript
 
-# QUIZ NIGHT!!!
+## QUIZ NIGHT!!!
 
 Tonight is a hands-on workshop night where we will focus on technical JS knowledge and interview skills!
 
@@ -134,6 +134,6 @@ let x = '515';
 - What are two ways to convert anything to its boolean value?
 - What are the 6 falsy values in JavaScript?
 
-## Type Exercises
+### Type Exercises
 
 Write your own version of [Number.isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN).
