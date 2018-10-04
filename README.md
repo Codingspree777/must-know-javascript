@@ -1,40 +1,80 @@
 # Must-Know JavaScript
 
-This is the companion repository for these slides: [https://slides.com/hueter/must-know-javascript/](https://slides.com/hueter/must-know-javascript/)
+# QUIZ NIGHT!!!
+
+Tonight is a hands-on workshop night where we will focus on technical JS knowledge and interview skills!
+
+Preferably with a partner (or alone if you prefer), write short answers to all of the questions (you can copy and paste this document into a Google Doc or fork this repository and use markdown -- advanced).
+
+For each of the exercises, do the following:
+
+1. Do an I-O-C-E analysis (Inputs, Outputs, Constraints, Edge Cases).
+1. Write down three clarifying questions to ask for the interviewer.
+1. Write some pseudocode or bullet-points about the problem.
+1. Write a possible code solution.
 
 ---
 
 ## Loops Quiz
 
 - When would you use a _for...of_ loop over a regular _for_ loop?
+- What are `while` loops good for?
 - What are the first two parameters for the `Array.prototype.forEach` callback function?
 - What happens to the return values for the `Array.prototype.forEach` callback function?
 - A _for...in_ loop is primarily used to iterate over the `____` of an `____`.
+- What is the value of `i` after the following loop:
+
+```js
+for (var i = 0; i < 4; i++) {
+  console.log(i);
+}
+```
+
+- What is the value of `j` after the following loop:
+
+```js
+for (let j = 0; j <= 3; j++) {
+  console.log(j);
+}
+```
+
+### Loops Exercises
+
+**Analyze Array**
+
+Write a function that takes an array and prints each element, its index, and its type on the same line, like this: `1 is at index 0 and its type is number`.
 
 ---
 
 ## Array Methods Quiz
 
-- Which array methods are pure functions?
+- How can you check if something is an array?
 - How can you easily make a copy of an array?
-- What are the return values of:
+- What are the function signatures (parameters and return values) of:
+  - includes
+  - indexOf
   - push
   - pop
   - splice
+  - slice
+  - join
   - shift
   - unshift
+  - concat
+  - sort
 - How does the `Array.prototype.map` function work?
 - How does the `Array.prototype.filter` function work?
 - How does the `Array.prototype.reduce` function work?
 
-Given the following code:
+### Arrays Exercises
 
-```js
-var arr = [2, 17, 3, 15, 18, 19, 1, 0];
-```
+**Remove Extremes**
 
-1.  Use method-chaining to remove the largest item from the array in one line.
-1.  Use method-chaining to create a new array that contains only the squares of the numbers that are greater than 9 in one line.
+Write a function called `removeExtremes` that removes the smallest and largest elements of an array of numbers.
+
+**Evens and Odds**
+
+Write a function called `evensOdds` that takes an array and a string that is either exactly `evens` or `odds`, then return a new array that has only the evens or the odds in it (depending on the second argument).
 
 ---
 
@@ -44,6 +84,18 @@ var arr = [2, 17, 3, 15, 18, 19, 1, 0];
 - How do you replace _all_ occurrences of a character using `String.prototype.replace`?
 - Why doesn't `str[0] = 'x'` work?
 - When do you use `+=` for strings?
+- What are the function signatures (parameters and return values) of:
+  - slice
+  - split
+  - replace
+  - indexOf
+  - includes
+
+### String Exercises
+
+**Replacer**
+
+Write a function that takes three strings. The first string is a word like `cactus`. The second string is a character to replace. The third string is a character to replace the second character with. Return the transformed string.
 
 ---
 
@@ -52,6 +104,14 @@ var arr = [2, 17, 3, 15, 18, 19, 1, 0];
 - What does `Object.keys` give you?
 - What does `Object.values` give you?
 - What does `Object.entries` give you?
+- What are the differences between dot access and bracket notation?
+- An object's keys are always what data type?
+
+### Objects Exercises
+
+**Merge Objects**
+
+Given an array of objects, return an object that consists all of the individual objects combined.
 
 ---
 
@@ -64,17 +124,12 @@ let x = '515';
 ```
 
 - What does `Number.isNaN` do?
-- What is special about `NaN` that is different from every other value in JavaScript?
-- Write your own version of `Number.isNaN`:
-
-```js
-function myIsNaN(val) {
-  // your code here
-}
-```
-
 - What is the difference between `==` and `===`?
 - What is a method to convert arrays and numbers to strings?
 - What is a valuable way to convert an object to a string?
 - What are two ways to convert anything to its boolean value?
 - What are the 6 falsy values in JavaScript?
+
+## Type Exercises
+
+Write your own version of [Number.isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN).
