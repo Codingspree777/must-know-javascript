@@ -11,7 +11,7 @@ For each of the exercises, do the following:
 1. Do an I-O-C-E analysis (Inputs, Outputs, Constraints, Edge Cases).
 1. Write down three clarifying questions to ask for the interviewer.
 1. Write some pseudocode or bullet-points about the problem.
-1. Write a possible code solution.
+1. (Optional) Write a possible code solution.
 
 ---
 
@@ -33,7 +33,7 @@ for (var i = 0; i < 4; i++) {
 - What is the value of `j` after the following loop:
 
 ```js
-for (let j = 0; j <= 3; j++) {
+for (var j = 5; j >= 0; j--) {
   console.log(j);
 }
 ```
@@ -43,6 +43,10 @@ for (let j = 0; j <= 3; j++) {
 **Analyze Array**
 
 Write a function that takes an array and prints each element, its index, and its type on the same line, like this: `1 is at index 0 and its type is number`.
+
+**So Random (Bonus)**
+
+Write a function that takes an integer between 1 and 10, inclusive. The function should continue generating random integers until it produces the target integer. When the target integer is generated, exit the function and return how many tries it took to do that.
 
 ---
 
